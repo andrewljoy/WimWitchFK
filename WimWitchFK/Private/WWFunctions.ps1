@@ -1594,7 +1594,7 @@ Function Select-WorkingDirectory {
 }
 
 Function Set-Version($wimversion) {
-    if (($wimversion -eq '10.0.22621.2428') -or ($wimversion -like '10.0.22631.*') -or ($wimversion -like '10.0.22621.3447')) { $version = '23H2' }
+    if (($wimversion -eq '10.0.22621.2428') -or ($wimversion -like '10.0.22631.*') -or ($wimversion -eq '10.0.22621.3447')) { $version = '23H2' }
     elseif ($wimversion -like '10.0.16299.*') { $version = '1709' }
     elseif ($wimversion -like '10.0.17134.*') { $version = '1803' }
     elseif ($wimversion -like '10.0.17763.*') { $version = '1809' }
